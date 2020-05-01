@@ -10,3 +10,12 @@
           ((= p 2) y))))
 (define (car_u cons_u) (cons_u 1))
 (define (cdr_u cons_u) (cons_u 2))
+
+
+; alone churche
+(define (cons-u x y)
+  (lambda (m) (m x y)))
+(define (car pair)
+  (pair (lambda (a b) a)))
+(define (cdr pair)
+  (pair (lambda (a b) b)))
