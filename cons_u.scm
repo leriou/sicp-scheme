@@ -11,8 +11,7 @@
 (define (car_u cons_u) (cons_u 1))
 (define (cdr_u cons_u) (cons_u 2))
 
-
-; alone churche
+; Alonso church's hack
 (define (cons-u x y)
   (lambda (m) (m x y)))
 (define (car pair)
